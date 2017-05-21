@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.5/jquery.touchSwipe.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  {% include navbar.html %}
+  <!--header-->
+  <div class="container-fluid">
+    <div class="row">
+      <div id="carousel" class="carousel slide">
+        <ol class="carousel-indicators" id="indicator">
+          <li class="active" data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" id="header">
+          <div class="item active">
+            <img src="static/kazan.jpg" alt="volga">
+            <div class="carousel-caption">
+              <p>Казанская крепость</p>
+            </div>
+          </div>
+          <div class="item">
+              <img src="static/novgorod.jpg" alt="volga">
+              <div class="carousel-caption">
+                <p>Нижегородская крепость</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="static/cheboksary.jpg" alt="volga" >
+              <div class="carousel-caption">
+                <p>Чебоксарский залив</p>
+              </div>
+          </div>
+          <div class="item">
+              <img src="static/uylanovsk.jpg" alt="">
+              <div class="carousel-caption">
+                <p>Президентский мост</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--header end-->
+
+  <!--city-->
+  <div class="container-fluid" style="padding-top:25px;">
+    <div class="row">
+      <ul class="nav nav-tabs" id="city">
+        <li  class="active"><a href="#tab1"
+        data-toggle="tab">Казань</a></li>
+        <li><a href="#tab2"
+        data-toggle="tab">Нижний Новгород</a></li>
+        <li><a href="#tab3"
+        data-toggle="tab">Чебоксары</a></li>
+        <li><a href="#tab4"
+        data-toggle="tab">Ульяновск</a></li>
+      </ul>
+      <div class="tab-content" style="padding-top:25px;">
+        <div class="tab-pane active" id="tab1">
+           {% include kazan.html %}
+        </div>
+        <div class="tab-pane" id="tab2">
+          2
+        </div>
+        <div class="tab-pane" id="tab3">
+          3
+        </div>
+        <div class="tab-pane" id="tab4">
+          4
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--city end-->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
