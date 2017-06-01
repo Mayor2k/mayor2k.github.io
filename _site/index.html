@@ -14,40 +14,62 @@
   <title>Welcome</title>
 </head>
 <body>
+  <nav class="navbar navbar-custom navbar-transparent">
+  <div class="container">
+    <div class="navbar-header" style="font-family: 'Indie Flower', cursive;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="font-size:32px;">Volga Magazine</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>Карта</li>
+        <li>Новости</li>
+        <li>О нас</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <!--header-->
-  <div class="container-fluid">
-    <div class="row">
-      <div id="carousel" class="carousel slide">
-        <ol class="carousel-indicators" id="indicator">
-          <li class="active" data-target="#carousel" data-slide-to="0"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-          <li data-target="#carousel" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" id="header">
-          <div class="item active">
-            <img src="static/kazan.jpg" alt="volga">
+  <div class="container-fluid fill">
+    <div id="carousel" class="carousel slide">
+      <ol class="carousel-indicators" id="indicator">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" id="header">
+        <div class="item active">
+          <div class="fill" style="background-image:url('static/kazan.jpg');">
             <div class="carousel-caption">
-              <p>Казанская крепость</p>
+              <p>Казанский кремль</p>
             </div>
           </div>
-          <div class="item">
-              <img src="static/novgorod.jpg" alt="volga">
-              <div class="carousel-caption">
-                <p>Нижегородская крепость</p>
-              </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('static/novgorod.jpg');">
+            <div class="carousel-caption">
+              <p>Нижегородский кремль</p>
+            </div>
           </div>
-          <div class="item">
-              <img src="static/cheboksary.jpg" alt="volga" >
-              <div class="carousel-caption">
-                <p>Чебоксарский залив</p>
-              </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('static/cheboksary.jpg');">
+            <div class="carousel-caption">
+              <p>Чебоксарский залив</p>
+            </div>
           </div>
-          <div class="item">
-              <img src="static/uylanovsk.jpg" alt="">
-              <div class="carousel-caption">
-                <p>Президентский мост</p>
-              </div>
+        </div>
+        <div class="item">
+          <div class="fill" style="background-image:url('static/uylanovsk.jpg');">
+            <div class="carousel-caption">
+              <p>Президентский мост</p>
+            </div>
           </div>
         </div>
       </div>
