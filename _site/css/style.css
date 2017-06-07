@@ -24,11 +24,11 @@
 .navbar-custom .navbar-nav > .active > a:focus,
 .navbar-custom .navbar-nav > .open >a {
     text-decoration: none;
-    background-color: #fef2f2;
+    background-color: #23527C;
 }
 
 .navbar-custom .navbar-brand {
-    color:#f0f0f0;
+    color:#23527C;
 }
 .navbar-custom .navbar-toggle {
     background-color:#eeeeee;
@@ -54,6 +54,9 @@ html,body{
   margin: 0;
   padding: 0;
 }
-.carousel-inner .item > img {
-  position: center;
+@media screen and (orientation:portrait) {
+  .carousel-inner .fill > img{
+
+     .+
+  }
 }

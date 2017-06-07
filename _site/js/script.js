@@ -39,3 +39,15 @@ $(document).ready(function(){
 		}
 	})
 })
+//navbar fixed
+$(document).ready(function(offset){
+	var carouselPixels = $("#carousel").height()
+	$(document).scroll(function(){
+		if (window.pageYOffset > carouselPixels/2){
+			$(".navbar-custom").hide("slow")
+		}
+		else {
+			$(".navbar-custom").show("slow")
+		}
+	})
+})
