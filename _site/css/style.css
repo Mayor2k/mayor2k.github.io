@@ -54,9 +54,7 @@ html,body{
   margin: 0;
   padding: 0;
 }
-@media screen and (orientation:portrait) {
-  .carousel-inner .fill > img{
-
-     .+
-  }
+h4 ul{
+  padding: 0;
+  margin-left: 0px;
 }
