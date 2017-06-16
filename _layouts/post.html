@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include navbar.html %}
+  <div class="back" id="navfor">
+    <div class="container">
+      <br><br>
+      <h1 style="padding-top:150px;">{{ page.title}}</h1>
+    </div>
+  </div>
+  <p class="meta">{{ page.date | date_to_string }}</p>
+  <div class="post">
+    <h3>{{ content }}</h3>
+  </div>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>

@@ -42,8 +42,12 @@ $(document).ready(function(){
 //navbar fixed
 $(document).ready(function(offset){
 	var carouselPixels = $("#carousel").height()
+	var backgroundPixel = $("#navfor").height()
 	$(document).scroll(function(){
-		if (window.pageYOffset > carouselPixels/2){
+		if (window.pageYOffset > carouselPixels/8){
+			$(".navbar-custom").hide("slow")
+		}
+		else if (window.pageYOffset > backgroundPixel/8) {
 			$(".navbar-custom").hide("slow")
 		}
 		else {
