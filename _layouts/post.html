@@ -3,6 +3,7 @@ layout: default
 ---
 <head>
   {% include head.html %}
+  <title>{{ page.title}}</title>
 </head>
 <body>
   {% include navbar.html %}
@@ -14,7 +15,7 @@ layout: default
   </div>
   <p class="meta">{{ page.date | date_to_string }}</p>
   <div class="post">
-    <h3>{{ content }}</h3>
+    <h4>{{ content }}</h4>
   </div>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/script.js"></script>

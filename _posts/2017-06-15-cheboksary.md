@@ -5,3 +5,4 @@ title: "В Чебоксарах идут дожди"
 permalink: cheboksary-rain
 description: МЧС ЧР предупреждает
 ---
+Вот так

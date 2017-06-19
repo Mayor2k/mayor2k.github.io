@@ -1,5 +1,8 @@
-<head>
-  <meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,10 +12,10 @@
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.touchswipe/1.6.5/jquery.touchSwipe.min.js"></script>
 
-  <title>В Чебоксарах идут дожди</title>
-</head>
-<body>
-  <nav class="navbar navbar-custom navbar-transparent">
+    <title>Map</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-custom navbar-transparent">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -32,17 +35,11 @@
   </div>
 </nav>
 
-  <div class="back" id="navfor">
-    <div class="container">
-      <br><br>
-      <h1 style="padding-top:150px;">В Чебоксарах идут дожди</h1>
-    </div>
-  </div>
-  <p class="meta">15 Jun 2017</p>
-  <div class="post">
-    <h4><p>Вот так</p>
-</h4>
-  </div>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/script.js"></script>
-</body>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDppaI4w9g9-29UzRCYjTcztHel1sxwrkQ&callback=initMap"
+    async defer></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/map.js"></script>
+  </body>
+</html>

@@ -36,6 +36,7 @@
 .navbar-custom .icon-bar {
     background-color:#000000;
 }
+
 /*navbar end*/
 html,body{
   height:100%;
@@ -59,9 +60,13 @@ h4 ul{
   margin-left: 0px;
 }
 .back{
+  background-color: #000000;
   font-family: 'Open Sans', sans-serif;
-  background: #000000;
   color: #ffffff;
   text-align: center;
   height: 50%;
+}
+/*map*/
+#map {
+  height: 100%;
 }
