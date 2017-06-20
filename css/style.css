@@ -7,6 +7,7 @@
     width: 100%;
     border-radius: 0px;
     z-index: 3;
+
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -31,10 +32,10 @@
     color:#23527C;
 }
 .navbar-custom .navbar-toggle {
-    background-color:#eeeeee;
+    background-color:rgba(#fffefe, 0);
 }
 .navbar-custom .icon-bar {
-    background-color:#000000;
+    background-color:#ffffff;
 }
 
 /*navbar end*/
