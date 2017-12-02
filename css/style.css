@@ -1,0 +1,50 @@
+html,body{
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;
+  background:#000 url(../static/background.gif)no-repeat fixed center center;
+  background-size: cover;
+  height: 100%;
+}
+.wrapper{
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+.fa{
+  color: #fff;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 32px;
+}
+.navbar{
+  text-align: center;
+}
+.navbar .github,
+.navbar .vk,
+.navbar .steam,
+.navbar .blog,
+.navbar .exemples{
+  display: inline-grid;
+  margin: 15px;
+}
+.fa:hover{
+  color: #FFB050;
+}
+.content{
+  margin-top: 25px;
+}
+.content h2{
+  text-align: center;
+  color: #FFB050;
+  text-shadow: 1px 1px 1px #ccc;
+}
+.content p{
+  text-align: center;
+  color: #fff;
+  font-weight: 200;
+}
+@media screen and (min-width:1440px){
+  .content p{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+}
