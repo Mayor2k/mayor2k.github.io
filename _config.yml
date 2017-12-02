@@ -1,6 +1,0 @@
-baseurl: /
-pagination:
-  enabled: true
-  per_page: 4
-gem:
-  -jekyll-paginate-v2
