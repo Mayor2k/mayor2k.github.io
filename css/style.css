@@ -7,20 +7,15 @@ body{
 }
 @media screen and (max-width: 772px){
   body{
-    background:url(../static/mobile.gif)no-repeat fixed center center;
+    background:#000 url(../static/mobile.gif)no-repeat fixed center center;
     background-size: cover;
     height: 100%;
   }
 }
 @media screen and (min-width: 773px){
   body{
-    background:url(../static/desktop.gif)no-repeat fixed center center;
+    background:#000 url(../static/desktop.gif)no-repeat fixed center center;
   }
-}
-
-.wrapper{
-  background: rgba(0, 0, 0, 0.52);
-  height: 100%;
 }
 .fa{
   color: #fff;
