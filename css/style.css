@@ -52,13 +52,16 @@ body{
   text-shadow: 1px 1px 1px #ccc;
   font-size: 16px;
 }
-@media screen and (min-width:1440px){
+@media screen and (min-width:1000px){
   .content p{
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 25vh;
+    margin-right: 25vh;
   }
 }
 .wrapper{
   background: rgba(0, 0, 0, 0.5);
-  height: 100vh;
+  top:0;
+  left:0;
+  z-index:-1;
+  position: absolute;
 }
