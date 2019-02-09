@@ -6,7 +6,7 @@ html,body{
 }
 @media screen and (max-width: 772px){
   body{
-    background:url(../static/mobile.gif)no-repeat fixed center center;
+    background:url(../static/mobile.gif)no-repeat fixed center center scroll 0 0 / 100% 100% #000000;
     background-size: cover;
   }
 }
