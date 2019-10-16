@@ -31,11 +31,9 @@ li{
   position: absolute;
   z-index: 2;
 }
-.nav-item a{
+nav .nav-item a{
   font-size: 18px;
-}
-.nav-item a{
-  color: black;
+  color: #000!important;
 }
 .navbar-brand{
   align-self: center;
@@ -146,6 +144,9 @@ li{
   .nav-item a{
     text-align: center;
   }
+  .navbar-custom{
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 }
 .telephone-info{
   text-align: center;
@@ -157,15 +158,40 @@ li{
 }
 .telephone-info .info-viber-number::before{
   content: url(img/ic-viber.png);
-  vertical-align: bottom;
   padding-right: 5px;
   vertical-align:middle;
+  list-style-type: none;
 }
 .telephone-info .info-velcom-number::before{
   content: url(img/ic-velcom.png);
   padding-right: 5px;
+  vertical-align:middle;
+  list-style-type: none;
 }
 .telephone-info .info-viber-number a, .telephone-info .info-velcom-number a{
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
+  line-height:20px;
 }
+/*mobile end*/
+
+/*adaptation header for small laptop screen*/
+@media only screen and (min-width: 992px){
+  nav .nav-item a{
+    font-size: 14px!important;;
+  }
+  .navbar-velcom-number a, .navbar-viber-number a{
+    line-height:3px;
+    font-size:20px !important;
+  }
+}
+@media only screen and (min-width: 1200px){
+  nav .nav-item a{
+    font-size: 18px!important;;
+  }
+  .navbar-velcom-number a, .navbar-viber-number a{
+    line-height:35px;
+    font-size:30px !important;
+  }
+}
+/*small laptop end*/
