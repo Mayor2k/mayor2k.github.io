@@ -38,8 +38,10 @@ nav .nav-item a{
 .navbar-brand{
   align-self: center;
 }
-.navbar-custom .custom-toggler{
+.navbar-custom .custom-toggler:focus,.navbar-custom .custom-toggler:hover,.navbar-custom .custom-toggler{
   border-color: transparent!important;
+  border:none;
+  outline: 0;
 }
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: -webkit-focus-ring-color auto 5px;
