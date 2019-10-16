@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+  url(https://fonts.gstatic.com/s/robotocondensed/v18/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCAYb8td.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+html, body, .wrapper{
+  height: 100%;
+  font-family: Roboto Condensed;
+}
+li{
+  list-style-type: none;
+}
+.row{
+  flex-grow: 1;
+}
+.header{
+  background: url(img/header.jpg)center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: %;
+  /*position: relative;*/
+}
+/*navbar*/
+.navbar-custom{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
+  position: absolute;
+  z-index: 2;
+}
+.nav-item a{
+  font-size: 18px;
+}
+.nav-item a{
+  color: black;
+}
+.navbar-brand{
+  align-self: center;
+}
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.navbar-telephone .navbar-viber-number::before{
+  content: url(img/ic-viber.png);
+  padding-right: 5px;
+  list-style-type: none;
+}
+.navbar-telephone .navbar-velcom-number::before{
+  content: url(img/ic-velcom.png);
+  padding-right: 5px;
+}
+.navbar-velcom-number a, .navbar-viber-number a{
+  line-height:35px;
+  font-size:30px !important;
+  color: #00ac00;
+  font-weight:400;
+}
+/*navbar end*/
+.vertical-align {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.page-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 1;
+  color: #fff;
+  text-shadow:2px 2px 3px #000000;
+}
+.header-description{
+  background: rgba(0, 0, 0, 0.8);
+  border-top-left-radius:30px;
+  border-top-right-radius:30px;
+  position: fixed;
+  bottom: 0;
+}
+.location-info1, .location-info2, .location-info3{
+  color: #fff;
+  text-align: center;
+}
+.location-info1 p, .location-info2 p, .location-info3 p{
+  margin-bottom: 5px;
+}
+/*oreder button*/
+.order-button {
+	display: inline-block;
+  margin: 0;
+  padding: 0.95rem 1.1rem;
+	border: 0;
+	border-radius: 0.6rem;
+	background-color: #ff6000;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+  line-height: 1.5;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+  position: relative;
+}
+.order-button p{
+  margin: 0;
+}
+.order-button img{
+  position: absolute;
+  left: 3.3rem;
+  top:1.6rem;
+  width: 56px;
+  height: 34px;
+}
+
+.order-button:hover {
+	opacity: 0.85;
+}
+
+.order-button:active {
+	box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
+}
+
+.order-button:focus {
+	outline: thin dotted #444;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+/*order button end*/
+
+/*adaptation header for mobile devices*/
+@media only screen and (max-width: 768px){
+  .location-info2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .nav-item a{
+    text-align: center;
+  }
+}
+.telephone-info{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.telephone-info .info-viber-number::before{
+  content: url(img/ic-viber.png);
+  vertical-align: bottom;
+  padding-right: 5px;
+  vertical-align:middle;
+}
+.telephone-info .info-velcom-number::before{
+  content: url(img/ic-velcom.png);
+  padding-right: 5px;
+}
+.telephone-info .info-viber-number a, .telephone-info .info-velcom-number a{
+  color: #fff;
+}
