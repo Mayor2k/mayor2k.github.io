@@ -38,6 +38,9 @@ nav .nav-item a{
 .navbar-brand{
   align-self: center;
 }
+.navbar-custom .custom-toggler{
+  border-color: transparent!important;
+}
 .navbar-toggler:focus, .navbar-toggler:active {
   outline: -webkit-focus-ring-color auto 5px;
 }
@@ -170,7 +173,7 @@ nav .nav-item a{
 }
 .telephone-info .info-viber-number a, .telephone-info .info-velcom-number a{
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   line-height:20px;
 }
 /*mobile end*/
