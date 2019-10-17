@@ -19,11 +19,19 @@
           <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
             <div class="row">
               <a class="nav navbar-brand col" href="#"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
-              <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <!--visible only on tablet-->
+              <div class="d-flex flex-row order-2 order-lg-3">
+                <ul class="tablet-res navbar-nav flex-row d-none d-md-block d-lg-none">
+                  <li class="nav-item tablet-viber-number align-middle"><a href="viber://chat?number=%2B375296584797">+375 (29) 658-47-97</a></li>
+                  <li class="nav-item tablet-velcom-number"><a href="tel:+375296063225">+375 (29) 606-32-25</a></li>
+                </ul>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <!--tablet end-->
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarSupportedContent">
                 <ul class="nav navbar-nav flex-column col">
                   <li class="nav-item"><a class="nav-link" href="#">ПРОЖИВАНИЕ</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">ИНТЕРЕСНЫЕ МЕСТА</a></li>
@@ -34,9 +42,9 @@
                   <li class="nav-item"><a class="nav-link" href="#">ФОТОГАЛЕРЕЯ</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">КАРТА И КОНТАКТЫ</a></li>
                 </ul>
-                <ul class="nav navbar-nav flex-column navbar-telephone d-none d-md-block col">
-                  <li class="navbar-viber-number"><a href="#">+375 (29) 658-47-97</a></li>
-                  <li class="navbar-velcom-number"><a href="#">+375 (29) 606-32-25</a></li>
+                <ul class="nav navbar-nav flex-column navbar-telephone d-none d-lg-block col">
+                  <li class="navbar-viber-number"><a href="viber://chat?number=%2B375296584797">+375 (29) 658-47-97</a></li>
+                  <li class="navbar-velcom-number"><a href="tel:+375296063225">+375 (29) 606-32-25</a></li>
                 </ul>
               </div>
             </div>
@@ -48,7 +56,7 @@
 
           <div class="header-description">
             <div class="row align-items-center">
-              <div class="location-info1 col-md-5 d-none d-sm-block">
+              <div class="location-info1 col-md-5 d-none d-md-block">
                 <p>Агроусадьба «Здоровей» расположена в непосредственной близости от туристической инфраструктуры
                   национального парка Нарочанский (Республика Беларусь) в живописном, тихом месте недалеко от 3-х озер
                   Нарочанского края (оз. Нарочь - 300 м., оз.Мястро 100 м., оз.Белое - 5 км.).</p>
@@ -57,12 +65,12 @@
                 <button class="order-button"><p>Забронировать</p><img src="img/sheet.png" alt=""></button>
               </div>
               <!--visible only on mobile-->
-              <ul class="telephone-info .d-none d-sm-block d-md-none">
+              <ul class="telephone-info d-sm-block d-md-none">
                 <li class="info-viber-number"><a href="viber://chat?number=%2B375296584797">+375 (29) 658-47-97</a></li>
                 <li class="info-velcom-number"><a href="tel:+375296063225">+375 (29) 606-32-25</a></li>
               </ul>
               <!--end-->
-              <div class="location-info3 col-md-4 d-none d-sm-block">
+              <div class="location-info3 col-md-4 d-none d-md-block">
                 <p>Координаты агроусадьбы для GPS-навигатора: <br>54.881544, 26.862877<br><a style="color:#fff;"
                   href="#">Посмотреть на карте<a></p>
               </div>
@@ -71,6 +79,8 @@
 
         </div>
       </div>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
     <script src="script.js"></script>
