@@ -180,6 +180,13 @@ nav .nav-item a{
   font-size: 20px;
   line-height:20px;
 }
+.mobile-description{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.mobile-info1, .mobile-info2{
+  text-align: center;
+  color: #fff;
+}
 /*mobile end*/
 
 /*adaptation header for tablet screen*/
@@ -256,4 +263,41 @@ nav .nav-item a{
     position: absolute;
     bottom: 0;
   }
+}
+/*main content*/
+.title{
+  display: inline;
+}
+.pills-item .nav-link.active p{
+  color: black;
+}
+.pills-item .nav-link.active h3{
+  color: #999999;
+}
+
+.pills-item .nav-link{
+  background:linear-gradient(to bottom, rgba(204,204,204,0.65) 0%,rgba(0,0,0,0) 100%)!important;
+  border-radius: 20px!important;
+}
+.pills-item .nav-link h3, .pills-item .nav-link p{
+  color: #999999;
+}
+
+.nav-pills {
+  white-space: nowrap;
+  display:block!important;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.pills-item{
+  margin: 10px;
+}
+.nav-pills::-webkit-scrollbar {
+    display: none;
+}
+.nav-pills>li {
+  display: inline-block;
 }
