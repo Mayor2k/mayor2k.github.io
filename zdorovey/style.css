@@ -370,6 +370,7 @@ nav .nav-item a{
   z-index: 2;
 }
 .mobile-text-about-bath h1{
+  padding-top:10px;
   color: #ffff00;
   text-align: center;
 }
@@ -378,3 +379,26 @@ nav .nav-item a{
   text-align: center;
 }
 /*bath end*/
+/*add services*/
+.add-servises-text h1{
+  color: #ff6000;
+  font-weight: bold;
+}
+.img-container{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.bottom-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 100%;
+  height: 30%;
+  transform: translateY(-100%);
+  text-align: center;
+}
+/*add services end*/
