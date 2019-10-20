@@ -16,32 +16,15 @@ li{
 .row{
   flex-grow: 1;
 }
-hr {
-    background: url('http://i.stack.imgur.com/37Aip.png') no-repeat top center;
-    background-size: contain;
-    display: block;
-    height: 18px;
-    border: 0;
-    position: relative;
-}
-hr:before,
-hr:after {
-    content: '';
-    display: block;
-    position: absolute;
-    background: #d7d7d7;
-    height: 2px;
-    top: 8px;
-}
-hr:before {
-    left: 0;
-    right: 50%;
-    margin-right: 10px;
-}
-hr:after {
-    right: 0;
-    left: 50%;
-    margin-left: 10px;
+hr{
+    background-image: url(img/hr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display:block;
+    border:0;
+    height:48px!important;
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -87,7 +70,7 @@ nav .nav-item a{
 .navbar-velcom-number a, .navbar-viber-number a{
   line-height:35px;
   font-size:30px !important;
-  color: #00ac00;
+  color: #1f9905;
   font-weight:400;
 }
 /*navbar end*/
@@ -233,7 +216,7 @@ nav .nav-item a{
 }
 .tablet-res .tablet-viber-number a, .tablet-res .tablet-velcom-number a{
   font-size: 21px;
-  color: #00ac00!important;
+  color: #1f9905!important;
 }
 .tablet-res .tablet-viber-number::before{
   content: url(img/ic-viber.png);
@@ -316,24 +299,82 @@ nav .nav-item a{
   padding: 0;
 }
 .pills-item .nav-link span{
-  font-size: 32px;
+  font-size: 21px;
 }
-
-.nav-pills {
-  white-space: nowrap;
-  display:block!important;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+@media only screen and (max-width: 1200px){
+  .nav-pills {
+    white-space: nowrap;
+    display:block!important;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  .info-table{
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .nav-pills::-webkit-scrollbar {
+      display: none;
+  }
 }
 .pills-item{
-  margin: 10px;
+  margin: 3px;
 }
-/*.nav-pills::-webkit-scrollbar {
-    display: none;
-}*/
 .nav-pills>li {
   display: inline-block;
 }
+
+/*main content end*/
+/*eat info*/
+.text-about-eat h1{
+  color: #ff6000;
+  font-weight: bold;
+}
+.h-100 img{
+  width: 100%;
+}
+/*eat info end*/
+/*bath info*/
+.bath-image-background{
+  background: url(img/banya.jpg)center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bath-image-background::before{
+  background: rgba(111, 55, 5, 0.6);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+@media only screen and (min-width: 992px){
+  .jumb{
+      padding-top: 2rem;
+  }
+}
+.text-about-bath{
+  vertical-align: middle;
+}
+.text-about-bath p{
+  color: white;
+}
+.text-about-bath h1{
+  color: #ffff00;
+}
+.mobile-text-about-bath{
+  z-index: 2;
+}
+.mobile-text-about-bath h1{
+  color: #ffff00;
+  text-align: center;
+}
+.mobile-text-about-bath p{
+  color: #fff;
+  text-align: center;
+}
+/*bath end*/
