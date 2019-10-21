@@ -18,3 +18,8 @@ $(window).resize(function() {
 });
 
 $(window).trigger('resize');
+
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});

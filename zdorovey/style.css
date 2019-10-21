@@ -402,3 +402,11 @@ nav .nav-item a{
   text-align: center;
 }
 /*add services end*/
+/*gallery*/
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+/*gallery end*/
