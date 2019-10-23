@@ -2,7 +2,7 @@
 $(window).resize(function() {
     $(".header-description").width($(".container").width());
     //set maxHeight for images
-    length = $(".h-100").children().length;
+    /*length = $(".h-100").children().length;
     maxHeight = 0;
     for(i=0;i<length;i++){
       a = $(".h-100").children().eq(i).height();
@@ -28,7 +28,7 @@ $(window).resize(function() {
         continue;
       }
     }
-    $(".carousel-item img").css({"max-height":maxHeight});
+    $(".carousel-item img").css({"max-height":maxHeight});*/
 });
 
 $(window).trigger('resize');
@@ -39,9 +39,6 @@ $(document).on("click", '[data-toggle="lightbox"]', function(event) {
 });
 
 $('#carousel-custom').on('slide.bs.carousel', function (e) {
-    /*
-        CC 2.0 License Iatek LLC 2018 - Attribution required
-    */
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 5;

@@ -335,6 +335,7 @@ nav .nav-item a{
 }
 .h-100 img{
   width: 100%;
+  height: 15rem;
 }
 /*eat info end*/
 /*bath info*/
@@ -438,6 +439,7 @@ nav .nav-item a{
 .carousel-item img{
   object-fit: cover;
   width: 100%;
+  height: 15rem;
 }
 @media (min-width: 576px) and (max-width: 991px) {
   /* Show 3rd slide on sm  if col-sm-6*/
@@ -561,3 +563,63 @@ i.fas{
   height: 30rem;
 }
 /*map end*/
+/*footer*/
+.footer{
+  background-color: #4c4c4c;
+}
+.navigation-menu li a{
+  color: white;
+
+}
+@media (min-width: 992px){
+  .navigation-menu-telephones,.navigation-menu{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .instagram{
+    padding-left:40px;
+  }
+}
+@media (max-width: 992px){
+  .navigation-menu-telephones li,.navigation-menu li, .brand, .instagram {
+    text-align: center;
+    display:block;
+  }
+  .first-navigation-menu{
+    padding-top: 15px;
+  }
+}
+.navigation-menu-telephones li a{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.viber-number ::before{
+  content: url(img/ic-viber.png);
+  padding-right: 5px;
+  list-style-type: none;
+}
+.velcom-number ::before{
+  content: url(img/ic-velcom.png);
+  padding-right: 5px;
+  list-style-type: none;
+}
+.instagram, .brand{
+  color: white;
+}
+.brand::before{
+  content: url(img/brand.png);
+  padding-right: 5px;
+  list-style-type: none;
+  vertical-align: -50%;
+}
+.instagram::before{
+  content: url(img/ic-instagram.png);
+  padding-right: 5px;
+  list-style-type: none;
+  vertical-align: -50%;
+}
+.brand{
+  margin-left: 1rem;
+}
+/*footer end*/
