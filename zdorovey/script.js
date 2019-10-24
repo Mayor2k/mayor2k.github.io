@@ -1,34 +1,7 @@
+
 //set .header-description width equal to navbar width
 $(window).resize(function() {
     $(".header-description").width($(".container").width());
-    //set maxHeight for images
-    /*length = $(".h-100").children().length;
-    maxHeight = 0;
-    for(i=0;i<length;i++){
-      a = $(".h-100").children().eq(i).height();
-      if (i==0) {
-        maxHeight = a;
-      }else if (i!=0 && maxHeight>a && a!=0) {
-        maxHeight = a;
-      }else {
-        continue;
-      }
-    }
-    $(".h-100 img").css({"max-height":maxHeight});
-    //do the same for gallery
-    length = $(".carousel-item").children().length;
-    maxHeight = 0;
-    for(i=0;i<length;i++){
-      a = $(".carousel-item").children().eq(i).height();
-      if (i==0) {
-        maxHeight = a;
-      }else if (i!=0 && maxHeight>a && a!=0) {
-        maxHeight = a;
-      }else {
-        continue;
-      }
-    }
-    $(".carousel-item img").css({"max-height":maxHeight});*/
 });
 
 $(window).trigger('resize');
@@ -57,3 +30,21 @@ $('#carousel-custom').on('slide.bs.carousel', function (e) {
         }
     }
 });
+//set fixed button
+function scrollFunction() {
+  if (document.documentElement.scrollTop>100) {
+    document.getElementById("myBtn").style.display = "block";
+  }else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+  this.oldScroll = this.scrollY;
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {
+  scrollFunction()
+};

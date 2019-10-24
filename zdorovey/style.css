@@ -9,6 +9,7 @@
 html, body, .wrapper{
   height: 100%;
   font-family: Roboto Condensed;
+  scroll-behavior: smooth;
 }
 li{
   list-style-type: none;
@@ -25,6 +26,26 @@ hr{
     height:48px!important;
     margin: 0;
     padding: 0;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  font-size: 21px;
+  outline: none;
+  background-color: rgba(147,147,147,0.8);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  #myBtn{
+    font-size: 16px;
+  }
 }
 
 .header{
