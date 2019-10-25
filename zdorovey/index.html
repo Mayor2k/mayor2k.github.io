@@ -16,6 +16,8 @@
     <script src="https://kit.fontawesome.com/30c01b0ea3.js" crossorigin="anonymous"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=513debb0-c6e9-4485-9444-686ed44b4d0b&lang=ru_RU" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script>
     <script>
     $(function(){
       new WOW().init();
@@ -74,7 +76,7 @@
                   Нарочанского края (оз. Нарочь - 300 м., оз.Мястро 100 м., оз.Белое - 5 км.).</p>
               </div>
               <div class="location-info2 col-md-3">
-                <button class="order-button"><p>Забронировать</p><img src="img/sheet.png" alt=""></button>
+                <button class="order-button" data-toggle="modal" data-target="#booking"><p>Забронировать</p><img src="img/sheet.png" alt=""></button>
               </div>
               <!--visible only on mobile-->
               <ul class="telephone-info d-sm-block d-md-none">
@@ -84,7 +86,7 @@
               <!--end-->
               <div class="location-info3 col-md-4 d-none d-md-block">
                 <p>Координаты агроусадьбы для GPS-навигатора: <br>54.881544, 26.862877<br><a style="color:#fff;"
-                  href="#">Посмотреть на карте<a></p>
+                  href="#map">Посмотреть на карте<a></p>
               </div>
             </div>
           </div>
@@ -101,7 +103,7 @@
           </div>
           <div class="mobile-info2">
             <p>Координаты агроусадьбы для GPS-навигатора: <br>54.881544, 26.862877<br><a style="color:#fff;text-decoration: underline;"
-              href="#">Посмотреть на карте<a></p>
+              href="#map">Посмотреть на карте<a></p>
           </div>
         </div>
       </div>
@@ -652,7 +654,7 @@
       <br>
       <!--gallery-->
       <div class="gallery-content" id="gallery-content">
-        <div class="container">
+        <div class="container gallery-content-backgound">
           <div id="carousel-custom" class="carousel slide" data-ride="carousel">
             <h1>Фотогаллерея</h1>
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
@@ -1539,7 +1541,7 @@
       <!--contact end-->
       <br>
       <!--map-->
-      <div class="map wow fadeInUp animated">
+      <div class="map wow fadeInUp animated" id="map">
         <div class="container">
           <div class="row">
             <div id="YMapMain"></div>
@@ -1594,6 +1596,82 @@
       <!--footer end-->
 
     </div>
+
+    <!--pop up screens-->
+    <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="bookingTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bookingitle">Заполните форму и отправьте данные нам</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Ваше имя"
+                    required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Ваша фамилия"
+                    required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control" placeholder="Ваш email">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="tel" class="form-control" id="validationCustom03" placeholder="Ваш номер телефона"required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input class="form-control" type="datapicker" placeholder="Дата заезда" id="validationCustom04" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input class="form-control" type="datapicker" placeholder="Дата выезда" id="validationCustom05" required>
+                </div>
+                <div class="form-group col-12">
+                  <label for="choose-apartament">Выберете желаемые апартаменты</label>
+                  <select class="form-control" id="validationCustom07">
+                    <option>"Вилла"</option>
+                    <option>"Ранчо"</option>
+                    <option>"Мята"</option>
+                    <option>"Скандинавский"</option>
+                    <option>"Летний"</option>
+                  </select>
+                </div>
+                <div class="form-group row">
+                  <label for="number-of-adults" class="col-sm-10 col-form-label">Количество взрослых (старше 16 лет):</label>
+                  <div class="col-sm-2">
+                    <input type="number" class="form-control" id="validationCustom08" min="1" max="100" value="1" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="number-of-kids" class="col-sm-10 col-form-label">Количество детей (от 3 до 16 лет):</label>
+                  <div class="col-sm-2">
+                    <input type="number" class="form-control" min="0" max="100" value="0">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="number-of-babies" class="col-sm-10 col-form-label">Количество маленьких детей (от 0 до 2 лет):</label>
+                  <div class="col-sm-2">
+                    <input type="number" class="form-control" min="0" max="100" value="0">
+                  </div>
+                </div>
+                <div class="form-group col-12">
+                  <textarea class="form-control" rows="3" placeholder="Прочие пожелания, время заезда, требуемые дополнительные услуги и т.д."></textarea>
+                </div>
+                <div class="row justify-content-center">
+                  <button type="button" class="btn btn-success text-center">Отправить</button>
+                </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--pop ups screens end-->
     <script src="script.js"></script>
     <script src="maps.js"></script>
   </body>

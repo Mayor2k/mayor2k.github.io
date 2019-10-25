@@ -432,14 +432,14 @@ nav .nav-item a{
   padding-bottom:2rem;
   font-weight: bold;
 }
-.gallery-content{
+.gallery-content-backgound{
   background: url(img/ranch1.jpg)center no-repeat;
   background-size: cover;
   position: relative;
   padding-bottom: 2rem;
   z-index: 1;
 }
-.gallery-content::before{
+.gallery-content-backgound::before{
   background: rgba(1, 161, 157, 0.6);
   content: '';
   display: block;
