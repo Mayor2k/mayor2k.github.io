@@ -13,4 +13,17 @@ permalink: /bitrix
 <body>
   <p>test</p>
 </body>
+<script type="text/javascript">
+  var params = {ID: '5e3962661e2332.21576186', STATUS: 'Terminated by rest app.'};
+  BX24.callMethod(
+  'bizproc.workflow.terminate',
+  params,
+  function(result){
+    if(result.error())
+      alert("Error: " + result.error());
+    else
+      alert("Успешно: " + result.data());
+    }
+  );
+</script>
 </html>
