@@ -1,5 +1,5 @@
 ---
-permalink: bitrix
+permalink: /bitrix
 ---
 <?php
 
