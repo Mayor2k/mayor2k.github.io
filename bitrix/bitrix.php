@@ -1,3 +1,6 @@
+---
+permalink: bitrix.php
+---
 <?php
 
 $getBPList = 'https://b24-hk0f7x.bitrix24.ru/rest/1/ooiqfalm5isnmh86/bizproc.workflow.instances';
